@@ -107,4 +107,3 @@ else:
         st.session_state.game_over = False
         st.rerun()
 
-!streamlit run app.py
