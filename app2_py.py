@@ -92,13 +92,7 @@ else:
     st.write("-------------------------------------------")
     st.header(f"🏁 จบเกมแล้ว! คุณได้คะแนนทั้งหมด {st.session_state.score}/10 คะแนน")
 
-    # ระบบตัดเกรดสไตล์ครู COMMANDER.YUT
-    if st.session_state.score == 10:
-        st.success("เพอร์เฟกต์! เอาเกรด A+ ไปครองเลยนักเรียน! 🏆")
-    elif st.session_state.score >= 5:
-        st.info("สอบผ่าน! เก่งใช้ได้เลยนะเรา 👍")
-    else:
-        st.warning("โดนตีแน่! ไปท่องศัพท์มาเพิ่มด่วนๆ เลย! 📖")
+
 
     if st.button("เล่นใหม่อีกครั้ง 🔄"):
         st.session_state.started = False
