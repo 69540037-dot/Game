@@ -36,7 +36,7 @@ if not st.session_state.started:
     
     with col1:
         # --- ใส่โค้ดสับไพ่ตรงนี้เลยครับ! ---
-        if st.button("กด 1: ลุยเลย! 🚀"):
+        if st.button("กดปุ่มนี้เพื่อเล่นลุยเลย! 🚀"):
             st.session_state.started = True
             
             # สับคำศัพท์แบบไม่ให้ซ้ำกันเก็บไว้ก่อนเริ่มเล่น
@@ -50,7 +50,7 @@ if not st.session_state.started:
             st.rerun()
             
     with col2:
-        if st.button("กด 0: ไม่เล่น ออกเกม 👋"):
+        if st.button("กดปุ่มนี้ไม่เล่นออกเกม 👋"):
             st.warning("กำลังออกจากเกม... ไว้ว่างๆ มาเล่นกันใหม่นะ!")
 
 # 4. หน้าเล่นเกม: ดึงคำศัพท์จากตัวแปร game_vocab ที่สับแล้วมาแสดงทีละข้อ
